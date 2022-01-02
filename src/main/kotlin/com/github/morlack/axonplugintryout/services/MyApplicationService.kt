@@ -1,6 +1,6 @@
-package org.jetbrains.plugins.template.services
+package com.github.morlack.axonplugintryout.services
 
-import org.jetbrains.plugins.template.MyBundle
+import com.github.morlack.axonplugintryout.MyBundle
 
 class MyApplicationService {
 

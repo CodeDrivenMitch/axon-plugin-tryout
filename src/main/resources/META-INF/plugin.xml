@@ -1,18 +1,18 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>org.jetbrains.plugins.template</id>
-    <name>Template</name>
-    <vendor>JetBrains</vendor>
+    <id>com.github.morlack.axonplugintryout</id>
+    <name>axon-plugin-tryout</name>
+    <vendor>morlack</vendor>
 
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="org.jetbrains.plugins.template.services.MyApplicationService"/>
-        <projectService serviceImplementation="org.jetbrains.plugins.template.services.MyProjectService"/>
+        <applicationService serviceImplementation="com.github.morlack.axonplugintryout.services.MyApplicationService"/>
+        <projectService serviceImplementation="com.github.morlack.axonplugintryout.services.MyProjectService"/>
     </extensions>
 
     <applicationListeners>
-        <listener class="org.jetbrains.plugins.template.listeners.MyProjectManagerListener"
+        <listener class="com.github.morlack.axonplugintryout.listeners.MyProjectManagerListener"
                   topic="com.intellij.openapi.project.ProjectManagerListener"/>
     </applicationListeners>
 </idea-plugin>
